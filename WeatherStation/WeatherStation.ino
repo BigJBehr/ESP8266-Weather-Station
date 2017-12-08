@@ -35,7 +35,7 @@
 #include "BME280.h"       // register definitions for BME280
 
 // ESP8266-12F (LoLin) board
-// Select NodeMCU 1.0 (ESP-12E Module) for LoLin Board
+// Select: NodeMCU 1.0 (ESP-12E Module) for LoLin Board
 
 // Use D0-D10 for GPIO names.
 // Use D0-D10 for GPIO names.
@@ -59,12 +59,12 @@
 #define SEALEVELPRESSURE_HPA (1013.25)
 
 // put the SSID and password for your WiFi network here
-const char* ssid = "Birdland";
-const char* password = "kcntr837b7";
+const char* ssid = "yourssid";
+const char* password = "password";
 
 // put your OpenWeatherMap.com Key and the zip code here
-const char* owmkey   = "c275c977517f6e3d343f10611f8ab103";
-const char* owmzip = "14502,us";
+const char* owmkey   = "yourkey";
+const char* owmzip = "yourzip,country";
 
 
 // Create the OLed display object using the brzo_I2C library
@@ -83,7 +83,7 @@ WiFiServer server(80);  // server on port 80
 
 // Adjust time for your timezone by changing TZ_EASTERN to one of the other values.
 #define TIMEZONE    TZ_EASTERN    // change this to your timezone
-#define DST         1             // set to 0 to disable daylight ssavings time
+#define DST         1             // set to 0 to disable daylight savings time
 
 // create NTP client and set your timezone, default NTP server is; time.nist.gov
 WiFiUDP    ntpUDP;
